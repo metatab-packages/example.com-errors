@@ -1,6 +1,6 @@
 Declare,metatab-latest
-Title,
-Description,
+Title,Common Errors
+Description,A dataset that generates data that may produce error cases
 Identifier,91a685c9-a802-47a4-97a8-25b5f2e6248f
 Name,example.com-errors-1.1.1
 Dataset,errors
@@ -14,7 +14,7 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2020-06-16T15:45:28
-Modified,2020-06-16T15:45:29
+Modified,2020-06-16T16:42:35
 Giturl,https://github.com/metatab-packages/example-collection.git
 ""
 Section,Contacts,Email,Organization,Url
@@ -26,5 +26,9 @@ Documentation,file:README.md,README,,
 Section,References,Name,Description,
 ""
 Section,Resources,Name,Description,
+Datafile,python:pylib#numbers_and_nulls,numbers_and_nulls,Intermixed numbers and nulls,
 ""
-Section,Schema,DataType,AltName,Description
+Section,Schema,DataType,AltName,Description,Has_Codes
+Table,numbers_and_nulls,,,,
+Table.Column,float,number,,,
+Table.Column,int,integer,,,
